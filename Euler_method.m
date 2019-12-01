@@ -12,7 +12,7 @@ plot(x,y,'b');
 hold on;
 plot(x1,y1,'-o');
 % plot(x,y1,'r');
-[legend_axes,legend_objects] = legend('приближенное','точное'); 
+[legend_axes,legend_objects] = legend('numerical','exact'); 
 grid;
 figure,
 plot(x,abs(y-transpose(y1)));
