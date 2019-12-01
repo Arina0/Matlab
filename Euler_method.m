@@ -7,7 +7,7 @@ y = fscanf(file2,formatSpec);
 % y1 = fscanf(file3,formatSpec);
 xx = [0 5];
 y0 = 1;
-[x1,y1] = ode23(@(x1,y1) y1*cos(x1), xx, y0);
+[x1,y1] = ode23(@(x1,y1) 5*y1*cos(5*x1), xx, y0);
 plot(x,y,'b');
 hold on;
 plot(x1,y1,'-o');
